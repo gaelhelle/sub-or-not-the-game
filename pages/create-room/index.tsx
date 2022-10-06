@@ -1,16 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
+import Router from "next/router";
+import { FormEvent } from "react";
 var randomWords = require("random-words");
 
 export default function CreateRoom() {
-  const handleSubmit = () => {
-    console.log("test");
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    Router.push("/room");
   };
 
   return (
     <>
       <Head>
-        <title>Sub or Not | The Game</title>
+        <title>Sub or Not | Join a Room</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>

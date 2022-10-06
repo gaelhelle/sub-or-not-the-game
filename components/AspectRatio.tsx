@@ -1,18 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 
-const AspectRatio = ({ children }) => {
-  const defaultSize = {
-    width: 1550,
-    height: 600,
-  };
+type Props = {
+  width: number;
+  height: number;
+  children: React.ReactNode;
+};
+
+const AspectRatio = (props: Props) => {
+  const { children, width, height } = props;
 
   const [scale, setScale] = useState(1);
-
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleResize() {
-      setScale(containerRef.current.offsetWidth / defaultSize.width);
+      const containerWidth = containerRef.current
+        ? containerRef.current.offsetWidth
+        : 0;
+      setScale(containerWidth / width);
     }
 
     handleResize();
@@ -25,8 +30,8 @@ const AspectRatio = ({ children }) => {
       <div
         className=" origin-top-left"
         style={{
-          width: defaultSize.width,
-          height: defaultSize.height,
+          width: width,
+          height: height,
           transform: `scale(${scale})`,
         }}
       >

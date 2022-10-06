@@ -1,15 +1,20 @@
 import Image from "next/image";
-import { useState } from "react";
 
 type Props = {
   number: number;
   disabled?: boolean;
-  onClick?: any;
+  onClick?: () => void;
   isUserTicket?: boolean;
 };
 
 const Tickets = (props: Props) => {
   const { number, disabled, onClick, isUserTicket } = props;
+
+  const imageSrc = disabled
+    ? "/img/tickets/ticket-disabled.svg"
+    : isUserTicket
+    ? "/img/tickets/ticket-selected.svg"
+    : "/img/tickets/ticket.svg";
 
   return (
     <div
@@ -22,13 +27,7 @@ const Tickets = (props: Props) => {
           : "text-[#143F54] cursor-pointer hover:rotate-6 hover:scale-105"
       }`}
     >
-      {disabled ? (
-        <Image src="/img/tickets/ticket-disabled.svg" width="200" height="92" />
-      ) : isUserTicket ? (
-        <Image src="/img/tickets/ticket-selected.svg" width="200" height="92" />
-      ) : (
-        <Image src="/img/tickets/ticket.svg" width="200" height="92" />
-      )}
+      <Image src={imageSrc} width="200" height="92" />
 
       <div className="text-4xl font-bold absolute top-0 h-full left-0 right-0 z-10 flex items-center justify-center">
         <div className="relative -top-1">{number}</div>
