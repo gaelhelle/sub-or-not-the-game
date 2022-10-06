@@ -1,1 +1,1 @@
-# sub-or-not-the-game
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
