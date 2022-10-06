@@ -13,10 +13,10 @@
   <h3 align="center">Sub or not Sub - The Game</h3>
 
   <p align="center">
-    Fun game inspired by the show Deal or no Deal. Project made as Freelancing.
+    Fun game inspired by the show Deal or no Deal. Project made for Freelancing gig.
     <br />
     <br />
-    <a href="/">View Demo</a>
+    <a href="https://sub-or-not-the-game.vercel.app/">View Demo</a>
   </p>
 </div>
 
@@ -30,14 +30,11 @@
 
 - [![React][react.js]][react-url]
 - [![Next][next.js]][next-url]
-- [![Tailwind][tailwind.js]][tailwind-url]
+- [![Tailwind][tailwind]][tailwind-url]
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -64,16 +61,16 @@ npm run dev
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/gaelhelle/sub-or-not-the-game?style=for-the-badge
+[contributors-url]: https://github.com/gaelhelle/sub-or-not-the-game/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/gaelhelle/sub-or-not-the-game.svg?style=for-the-badge
+[forks-url]: https://github.com/gaelhelle/sub-or-not-the-game/network/members
+[stars-shield]: https://img.shields.io/github/stars/gaelhelle/sub-or-not-the-game.svg?style=for-the-badge
+[stars-url]: https://github.com/gaelhelle/sub-or-not-the-game/stargazers
+[issues-shield]: https://img.shields.io/github/issues/gaelhelle/sub-or-not-the-game.svg?style=for-the-badge
+[issues-url]: https://github.com/gaelhelle/sub-or-not-the-game/issues
+[license-shield]: https://img.shields.io/github/license/gaelhelle/sub-or-not-the-game.svg?style=for-the-badge
+[license-url]: https://github.com/gaelhelle/sub-or-not-the-game/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/gael
 [product-screenshot]: public/img/thumbnail.png
